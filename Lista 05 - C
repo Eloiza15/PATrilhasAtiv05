@@ -12,8 +12,8 @@ public class Exercicios
         DateTime dataNascimento = DateTime.Parse(dataFornecida);
         DateTime dataAtual = DateTime.Now;
         
-        TimeSpan idadeSpan = dataAtual-dataNascimento;
-        int idadeEmAnos = (int)(idadeSpan.TotalDays / 365.25); 
+        TimeSpan idade = dataAtual-dataNascimento;
+        int idadeEmAnos = (int)(idade.TotalDays / 365.25); 
         
         Console.WriteLine("Sua idade é " + idadeEmAnos + " anos");
       
