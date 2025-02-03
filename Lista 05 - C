@@ -6,15 +6,16 @@ public class Exercicios
     {
         //Crie um programa que calcule a idade de uma pessoa a partir de sua data de nascimento.
         
-        Console.WriteLine ("Digite sua data de nascimento:");
+        Console.WriteLine ("Digite sua data de nascimento (formato: dd/MM/yyyy):");
         string dataFornecida = (Console.ReadLine());
         
         DateTime dataNascimento = DateTime.Parse(dataFornecida);
         DateTime dataAtual = DateTime.Now;
         
-        TimeSpan idade = dataAtual-dataNascimento;
+        TimeSpan idadeSpan = dataAtual-dataNascimento;
+        int idadeEmAnos = (int)(idadeSpan.TotalDays / 365.25); 
         
-        Console.WriteLine("Sua idade é" + idade);
+        Console.WriteLine("Sua idade é " + idadeEmAnos + " anos");
       
         Console.WriteLine("");
         Console.Write("Pressione qualquer tecla para fechar...");
