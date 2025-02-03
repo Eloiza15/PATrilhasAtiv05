@@ -1,0 +1,16 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        //Crie um programa que exiba a data e hora atual.
+        
+        DateTime dataAtual = DateTime.Now;
+        Console.WriteLine("Essa é a data e a hora atual: " + dataAtual);
+        
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
