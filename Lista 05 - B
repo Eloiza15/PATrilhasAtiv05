@@ -1,0 +1,18 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        //Crie um programa que calcule a diferença em dias entre duas datas.
+        
+        DateTime dataAntiga = new DateTime (2024, 03, 18);
+        DateTime dataAtual = DateTime.Now;
+        
+        Console.WriteLine((dataAtual-dataAntiga).Days);
+      
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
