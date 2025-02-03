@@ -1,0 +1,40 @@
+using System; 
+
+public class Exercicios
+{
+    public static void Main()
+    {
+    	//Crie um programa que permita ao usuário escolher uma opção de menu (1, 2 ou 3)  
+    	//e exiba uma mensagem de acordo com a opção escolhida.
+    	
+    	Console.WriteLine("Escolha uma opção do MENU:");
+    	Console.WriteLine("1 - Filmes");
+    	Console.WriteLine("3 - Séries");
+    	Console.WriteLine("3 - Documentários");
+    	
+    	string opcao = (Console.ReadLine());
+    	
+    	switch (opcao){
+    			
+    		case "1":
+    			Console.WriteLine("Você escolheu a aba Filmes");
+    			break;
+    			
+    		case "2":
+    			Console.WriteLine("Você escolheu a aba Séries");
+    			break;
+    			
+    		case "3":
+    			Console.WriteLine("Você escolheu a aba Documentários");
+    			break;
+    			
+    		default:
+    			Console.WriteLine("Opção inválida, tente novamente.");
+    			break;
+    	}
+ 
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para fechar.");
+        Console.ReadKey();
+    }
+}
