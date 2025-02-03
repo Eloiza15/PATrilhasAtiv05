@@ -1,0 +1,23 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        //Crie um programa que calcule a idade de uma pessoa a partir de sua data de nascimento.
+        
+        Console.WriteLine ("Digite sua data de nascimento:");
+        string dataFornecida = (Console.ReadLine());
+        
+        DateTime dataNascimento = DateTime.Parse(dataFornecida);
+        DateTime dataAtual = DateTime.Now;
+        
+        TimeSpan idade = dataAtual-dataNascimento;
+        
+        Console.WriteLine("Sua idade é" + idade);
+      
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
