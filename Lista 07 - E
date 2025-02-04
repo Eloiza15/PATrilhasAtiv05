@@ -1,0 +1,42 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+        public static void Main()
+        {
+        	//Crie um programa que solicite ao usuário para inserir números inteiros até
+        	//que um número negativo seja inserido. Em seguida, exiba a soma dos
+        	//números inseridos (excluindo o número negativo).
+
+            int num;
+            int soma = 0;
+            string resposta;
+
+            do
+            {
+                Console.WriteLine("Digite um número inteiro para soma (não pode ser negativo):");
+                num = int.Parse(Console.ReadLine());
+
+                if (num < 0)
+                {
+                    Console.WriteLine("Número negativo inserido. Finalizando a soma.");
+                    break; 
+                }
+
+                soma += num; 
+
+                Console.WriteLine("Deseja adicionar outro número para soma? (sim ou não)");
+                resposta = Console.ReadLine().ToLower();
+
+            } while (resposta == "sim");
+
+            Console.WriteLine("A soma dos números inseridos é: " + soma);
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
