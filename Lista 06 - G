@@ -1,0 +1,41 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Crie um programa que permita ao usuário escolher uma cor (vermelho, azul
+         //ou verde) e exiba uma mensagem informando a cor escolhida.
+         
+         Console.WriteLine("Escolha uma cor entre vermelho, azul ou verde:");
+         string cor = (Console.ReadLine().ToLower());
+         
+         switch (cor) {
+         		
+         	case "vermelho":
+         		Console.WriteLine ("Você escolheu a cor Vermelha");
+         		break;
+         		
+         	case "azul":
+         		Console.WriteLine("Você escolheu a cor Azul");
+         		break;
+         		
+         	case "verde":
+         		Console.WriteLine("Você escolheu a cor Verde");
+         		break;
+         		
+         	default:
+         		Console.WriteLine("Você escreveu uma resposta inválida");   
+         		break;
+         }
+          
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para fechar.");
+        Console.ReadKey();  
+			
+		}
+	}
+}
