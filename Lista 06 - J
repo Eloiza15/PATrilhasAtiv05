@@ -1,0 +1,42 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Crie um programa que permita ao usuário escolher uma das três opções de
+         //tamanho de camiseta (P, M ou G) e exiba o preço correspondente, utilizando
+         //o switch.
+         
+         Console.WriteLine("Escolha entre três opções de tamanho de camiseta (P, M ou G):");
+         char tamanho = char.Parse(Console.ReadLine().ToUpper());
+         
+        switch (tamanho) {
+        		
+        	case 'P':
+        		Console.WriteLine("O preço da camiseta é R$ 15,00");
+        		break;
+        		
+        	case 'M':
+        		Console.WriteLine("O preço da camiseta é R$ 20,00");
+        		break;
+        		
+        	case 'G':
+        		Console.WriteLine("O preço da camiseta é R$ 25,00");
+        		break;
+        		
+        	default:
+        		Console.WriteLine("Você escreveu um tamanho inválido");
+        		break;
+        }
+          
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para fechar.");
+        Console.ReadKey();  
+			
+		}
+	}
+}
