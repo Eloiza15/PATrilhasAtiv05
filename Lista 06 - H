@@ -1,0 +1,49 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Crie um programa que permita ao usuário inserir uma letra e exiba uma
+         //mensagem informando se é uma vogal ou consoante.
+         
+         Console.WriteLine("Escreva uma letra:");
+         char letra = char.Parse(Console.ReadLine().ToLower());
+         
+        switch (letra) {
+        		
+        	case 'a':
+        		Console.WriteLine("Você escreveu uma vogal");
+        		break;
+        		
+        	case 'e':
+        		Console.WriteLine("Você escreveu uma vogal");
+        		break;
+        		
+        	case 'i':
+        		Console.WriteLine("Você escreveu uma vogal");
+        		break;
+        		
+        	case 'o':
+        		Console.WriteLine("Você escreveu uma vogal");
+        		break;
+        		
+        	case 'u':
+        		Console.WriteLine("Você escreveu uma vogal");
+        		break;
+        		
+        	default:
+        		Console.WriteLine("Você escreveu uma consoante");
+        		break;
+        }
+          
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para fechar.");
+        Console.ReadKey();  
+			
+		}
+	}
+}
