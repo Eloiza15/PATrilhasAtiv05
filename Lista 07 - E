@@ -10,14 +10,14 @@ namespace Exercicios
         	//que um número negativo seja inserido. Em seguida, exiba a soma dos
         	//números inseridos (excluindo o número negativo).
 
-            int num;
+          
             int soma = 0;
-            string resposta;
+            string resposta = "sim";
 
-            do
-            {
+            while (resposta == "sim"){
+            	
                 Console.WriteLine("Digite um número inteiro para soma (não pode ser negativo):");
-                num = int.Parse(Console.ReadLine());
+                int num = int.Parse(Console.ReadLine());
 
                 if (num < 0)
                 {
@@ -30,7 +30,7 @@ namespace Exercicios
                 Console.WriteLine("Deseja adicionar outro número para soma? (sim ou não)");
                 resposta = Console.ReadLine().ToLower();
 
-            } while (resposta == "sim");
+            };
 
             Console.WriteLine("A soma dos números inseridos é: " + soma);
 
