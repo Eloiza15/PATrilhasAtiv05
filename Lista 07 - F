@@ -16,12 +16,11 @@ namespace Exercicios
              
              Console.WriteLine("Números pares ate " + num + ":");
              
-             int contador = 2;   	         
-         do {
+             int contador = 2;   	             	
+             while (contador <= num){
              	Console.WriteLine (contador);
-             	contador +=2;    	
-         	
-         } while (contador <= num);
+             	contador +=2;
+             }
           
         Console.WriteLine("");
         Console.WriteLine("Pressione qualquer tecla para fechar.");
