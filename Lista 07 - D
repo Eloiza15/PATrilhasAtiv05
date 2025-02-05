@@ -1,50 +1,49 @@
 using System;
 
 namespace Exercicios
-{ 
-	class Program 
-	{
-		public static void Main()
-		{
-			
-//         Desenvolva um programa que solicite ao usuário para inserir uma senha e,
-//em seguida, permita que o usuário tente inserir a senha até três vezes. Caso o
-//usuário acerte a senha, exiba uma mensagem de sucesso. Caso contrário,
-//exiba uma mensagem informando que a senha está incorreta.
-         
-         int senha = 1234;
-         int resposta;
-         int tentativas = 0;
-           	         
-         do {
-         	
-         	Console.WriteLine ("Digite uma senha de 4 números inteiros:");
-         	resposta = int.Parse(Console.ReadLine());         	
-         	tentativas ++;
-         	
-         	if (resposta != senha){
-         		if (tentativas < 3){
-         			 
-         			Console.WriteLine("Senha errada, você ainda tem " + (3-tentativas) + " tentativas");
-         		}
-         	}
-         	else {
-         		Console.WriteLine("Bem vindo ao sistema!");
-         		break;
-         	}
-         	
-         } while (tentativas < 3);
-         
-         if (tentativas == 3 && resposta != senha)
-         {
-         	Console.WriteLine("Tentativas demais, sistema bloqueado");
-         }
-         
-          
-        Console.WriteLine("");
-        Console.WriteLine("Pressione qualquer tecla para fechar.");
-        Console.ReadKey();  
-			
-		}
-	}
+{
+    class Program
+    {
+        public static void Main()
+        {
+            // Desenvolva um programa que solicite ao usuário para inserir uma senha e,
+            // em seguida, permita que o usuário tente inserir a senha até três vezes. Caso o
+            // usuário acerte a senha, exiba uma mensagem de sucesso. Caso contrário,
+            // exiba uma mensagem informando que a senha está incorreta.
+
+            int senha = 5678;
+            int resposta = 0; 
+            int tentativas = 0; 
+
+            while (tentativas < 3)
+            {
+                Console.WriteLine("Digite uma senha de 4 números inteiros:");
+                resposta = int.Parse(Console.ReadLine());
+                tentativas++;
+
+                if (resposta == senha)
+                {
+                    Console.WriteLine("Bem-vindo ao sistema!");
+                    break; 
+                }
+                else
+                {
+                    if (tentativas < 3)
+                    {
+                        Console.WriteLine("Senha errada. Você ainda tem " + (3 - tentativas) + " tentativas.");
+                    }
+                }
+            }
+
+            
+            if (tentativas == 3 && resposta != senha)
+            {
+                Console.WriteLine("Tentativas demais, sistema bloqueado.");
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
 }
