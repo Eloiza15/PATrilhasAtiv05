@@ -16,11 +16,13 @@ namespace Exercicios
              Console.WriteLine("Tabuada do " + num + ":");
              
              int contador = 1;   	         
-         do {
+          
+             while (contador <= 10){
+             	
              	Console.WriteLine (num + " * " + contador + " = " + num*contador);
              	contador +=1;    	
-         	
-         } while (contador <= 10);
+             }
+         
           
         Console.WriteLine("");
         Console.WriteLine("Pressione qualquer tecla para fechar.");
