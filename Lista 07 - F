@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Crie um programa que solicite ao usuário para inserir um número inteiro
+         //positivo e, em seguida, exiba todos os números pares entre 0 e o número
+         //inserido.
+          
+         Console.WriteLine("Insira um número inteiro positivo:");
+             int num = int.Parse(Console.ReadLine());
+             
+             Console.WriteLine("Números pares ate " + num + ":");
+             
+             int contador = 2;   	         
+         do {
+             	Console.WriteLine (contador);
+             	contador +=2;    	
+         	
+         } while (contador <= num);
+          
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para fechar.");
+        Console.ReadKey();  
+			
+		}
+	}
+}
