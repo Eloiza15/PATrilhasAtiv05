@@ -1,0 +1,36 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Crie um programa que solicite ao usuário para inserir uma sequência de
+         //números inteiros e, em seguida, exiba a soma desses números.
+         
+         int soma = 0;
+         string resposta;
+         int numero;
+           	         
+         do {
+         	
+         	Console.WriteLine ("Digite um número inteiro para soma:");
+         	numero = int.Parse(Console.ReadLine());
+         	soma += numero;
+         	
+         	Console.WriteLine("Deseja adicionar outro número para soma? (sim ou não)");
+         	resposta = (Console.ReadLine().ToLower());
+         	
+         } while (resposta == "sim");
+         
+         Console.WriteLine("A soma dos números é:" + soma);
+          
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para fechar.");
+        Console.ReadKey();  
+			
+		}
+	}
+}
